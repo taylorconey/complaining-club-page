@@ -1,1 +1,142 @@
-# complaining-club-page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complaining Club - Purdue University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif; /* Updated font for a classic look */
+      background-color: #fffaf0;
+      color: #222;
+      overflow-x: hidden;
+    }
+    .background-logo {
+      position: fixed;
+      top: 50%; /* Centers vertically */
+      left: 50%; /* Centers horizontally */
+      transform: translate(-50%, -40%); /* Raised the image slightly by reducing vertical offset */
+      width: 80vw; /* Maintains the size */
+      height: 80vh; /* Maintains the size */
+      z-index: -1;
+      opacity: 0.1; /* Keeps the adjusted opacity */
+      background: url('https://www.pngmart.com/files/23/Purdue-Logo-PNG.png') center center no-repeat;
+      background-size: contain; /* Ensures proper scaling */
+    }
+    nav {
+      background-color: #000;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    header {
+      text-align: center;
+      padding: 3em 1em 2em;
+      color: #c5a76d;
+    }
+    header h1 {
+      font-family: 'Georgia', serif; /* Font matches body for cohesion */
+      font-size: 4em;
+      margin: 0;
+    }
+    header h2 {
+      font-weight: normal;
+      font-size: 1.5em;
+      margin-top: 0.3em;
+    }
+    .highlight {
+      background-color: #c5a76d;
+      color: black;
+      padding: 2em;
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin: 2em auto;
+      border-radius: 16px;
+      max-width: 800px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 2em auto;
+      padding: 2em;
+      border-radius: 12px;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    h2 {
+      color: #000;
+      margin-top: 0;
+    }
+    .decorative-shape {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #c5a76d;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+    .shape-top-left {
+      top: -40px;
+      left: -40px;
+    }
+    .shape-bottom-right {
+      bottom: -40px;
+      right: -40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-logo"></div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#purpose">Purpose</a>
+    <a href="#mission">Mission</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>The Complaining Club</h1>
+    <h2>Purdue University</h2>
+  </header>
+
+  <div class="highlight" id="events">
+    <strong>The Vent Tent: Where Complaints Connect</strong><br>
+    Activities include an Open Mic (“Rant-off”) and Prizes! Join us to share, laugh, and maybe solve something!
+  </div>
+
+  <div class="content" id="purpose">
+    <div class="decorative-shape shape-top-left"></div>
+    <h2>Our Purpose</h2>
+    <p>The purpose of the Complaining Club at Purdue University is to provide students with a light-hearted, judgment-free space to voice frustrations, share humorous grievances, and build community through shared experiences!</p>
+    <div class="decorative-shape shape-bottom-right"></div>
+  </div>
+
+  <div class="content" id="mission">
+    <div class="decorative-shape shape-top-left"></div>
+    <h2>Our Mission</h2>
+    <p>Giving voice to the voiceless grumblers — the Campus Complaining Club is dedicated to airing grievances, sharing rants, and finding catharsis through collective complaint.</p>
+    <div class="decorative-shape shape-bottom-right"></div>
+  </div>
+
+  <div class="content" id="contact">
+    <div class="decorative-shape shape-top-left"></div>
+    <h2>Contact Us</h2>
+    <p>Email: complainingclub@purdue.edu<br>
+    Instagram: @purduecomplainingclub</p>
+    <div class="decorative-shape shape-bottom-right"></div>
+  </div>
+</body>
+</html>
